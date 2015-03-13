@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	font-size: 50px;
+	font-weight: lighter;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
+	text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+html,
+body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+.a-vert {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#content{
+	text-align: center;
+}
+#color{
+	font-size: 25px;
+}
