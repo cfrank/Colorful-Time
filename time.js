@@ -1,6 +1,6 @@
 function getTime()
 {
-	var body 		= document.body,
+	var body		= document.body,
 		container	= document.getElementById("content"),
 		date		= new Date(),
 		nums		= [date.getHours(), date.getMinutes(), date.getSeconds()];
