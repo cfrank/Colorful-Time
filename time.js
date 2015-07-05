@@ -1,8 +1,6 @@
 function getTime()
 {
-	var body		= document.body,
-		container	= document.getElementById("content"),
-		date		= new Date(),
+	var date		= new Date(),
 		nums		= [date.getHours(), date.getMinutes(), date.getSeconds()];
 		timeCont	= document.getElementById("time"),
 		hexCont		= document.getElementById("color");
@@ -15,14 +13,10 @@ function getTime()
 	}
 
 	var hex = "#" + "" + nums[0] + nums[1] + nums[2];
-
-	body.style.background = hex;
+	document.body.style.background = hex;
 	timeCont.innerHTML = nums[0] + " : " + nums[1] + " : " + nums[2];
 	hexCont.innerHTML = hex;
 
 	setTimeout(function(){getTime();} , 1000);
 }
-document.addEventListener("DOMContentLoaded", function()
-{
-	getTime();
-});
+document.addEventListener("DOMContentLoaded", function() { getTime(); });
